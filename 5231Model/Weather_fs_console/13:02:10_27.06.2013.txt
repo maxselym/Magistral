@@ -1,0 +1,11 @@
+Debug: Start time:  "13:02:10_27.06.2013" 
+Debug: Preferences loaded! 
+Debug: WFS loaded! 
+Debug: Date and time to calc: 
+Debug: "2013-06-27_00:00:00
+2013-06-28_00:00:00" 
+Debug: File linked! 
+Debug: Core num is:  4 
+Debug: "Module 1 finished!" 
+Debug: "Module 2 finished!" 
+Debug: "Error Module 3 !!!" 

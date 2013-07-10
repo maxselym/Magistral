@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QMdiArea::SubWindowView</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="action_About"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <widget class="QMenu" name="menu_Settings">
+    <property name="title">
+     <string>&amp;Settings</string>
+    </property>
+    <addaction name="action_Preferences"/>
+   </widget>
+   <widget class="QMenu" name="menuValidation">
+    <property name="title">
+     <string>Validation</string>
+    </property>
+    <addaction name="actionValidation"/>
+   </widget>
+   <widget class="QMenu" name="menuNetwork">
+    <property name="title">
+     <string>Network</string>
+    </property>
+    <addaction name="actionSend_to_RZD"/>
+    <addaction name="actionForecast_for"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>&amp;Window</string>
+    </property>
+    <addaction name="action_Close"/>
+    <addaction name="actionClose_All"/>
+    <addaction name="separator"/>
+    <addaction name="actionTile"/>
+    <addaction name="action_Cascade"/>
+    <addaction name="separator"/>
+    <addaction name="action_Next"/>
+    <addaction name="actionPre_vious"/>
+   </widget>
+   <widget class="QMenu" name="menuWPS">
+    <property name="title">
+     <string>WRF</string>
+    </property>
+    <addaction name="actionRun_WPS"/>
+    <addaction name="actionSetup_WPS"/>
+    <addaction name="actionEdit_namelist_wps"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_Settings"/>
+   <addaction name="menuWPS"/>
+   <addaction name="menuValidation"/>
+   <addaction name="menuNetwork"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionWRF"/>
+   <addaction name="actionWRFDA"/>
+   <addaction name="separator"/>
+   <addaction name="actionWeather_stations"/>
+   <addaction name="actionCalc_Special_Parameters"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="main_res.qrc">
+     <normaloff>:/image/exit.png</normaloff>:/image/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About &amp;Qt</string>
+   </property>
+  </action>
+  <action name="actionWRF">
+   <property name="text">
+    <string>WRF</string>
+   </property>
+   <property name="toolTip">
+    <string>Run WRF</string>
+   </property>
+  </action>
+  <action name="actionWRFDA">
+   <property name="text">
+    <string>WRFDA</string>
+   </property>
+   <property name="toolTip">
+    <string>Run WRFDA</string>
+   </property>
+  </action>
+  <action name="action_Preferences">
+   <property name="text">
+    <string>&amp;Preferences</string>
+   </property>
+  </action>
+  <action name="actionValidation">
+   <property name="text">
+    <string>Validation</string>
+   </property>
+  </action>
+  <action name="actionSend_to_RZD">
+   <property name="text">
+    <string>Send to RZD</string>
+   </property>
+  </action>
+  <action name="actionForecast_for">
+   <property name="text">
+    <string>Forecast for...</string>
+   </property>
+  </action>
+  <action name="actionTile">
+   <property name="text">
+    <string>&amp;Tile</string>
+   </property>
+  </action>
+  <action name="action_Cascade">
+   <property name="text">
+    <string>&amp;Cascade</string>
+   </property>
+  </action>
+  <action name="action_Close">
+   <property name="text">
+    <string>&amp;Close</string>
+   </property>
+  </action>
+  <action name="actionClose_All">
+   <property name="text">
+    <string>Close &amp;All</string>
+   </property>
+  </action>
+  <action name="action_Next">
+   <property name="text">
+    <string>Ne&amp;xt</string>
+   </property>
+  </action>
+  <action name="actionPre_vious">
+   <property name="text">
+    <string>Pre&amp;vious</string>
+   </property>
+  </action>
+  <action name="actionRun_WPS">
+   <property name="text">
+    <string>Run WRF</string>
+   </property>
+  </action>
+  <action name="actionEdit_namelist_wps">
+   <property name="text">
+    <string>Edit namelist</string>
+   </property>
+  </action>
+  <action name="actionSetup_WPS">
+   <property name="text">
+    <string>Setup WRF</string>
+   </property>
+  </action>
+  <action name="actionCalc_Special_Parameters">
+   <property name="text">
+    <string>Calc Special Parameters</string>
+   </property>
+  </action>
+  <action name="actionWeather_stations">
+   <property name="text">
+    <string>Weather stations</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="main_res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

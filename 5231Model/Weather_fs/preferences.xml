@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <host>localhost</host>
+    <databasename>magistral</databasename>
+    <username>superuser</username>
+    <password>9kboU6GP</password>
+    <port>5432</port>
+    <Core_num>4</Core_num>
+    <Wps_root_folder>/nfs/WPS/</Wps_root_folder>
+    <WRFDA_root_folder>/nfs/WRFDA/</WRFDA_root_folder>
+    <WRF_root_folder>/nfs/WRFV3/</WRF_root_folder>
+    <ARWPost_root_folder>/nfs/ARWpost/</ARWPost_root_folder>
+    <Wps_GEOG_folder>/nfs/geog/</Wps_GEOG_folder>
+    <Wps_WORK_folder>/nfs/WRF/Work/</Wps_WORK_folder>
+    <Wps_GRIB_folder>/nfs/WRF/In/</Wps_GRIB_folder>
+    <WRF_output_folder>/nfs/WRF/Out/</WRF_output_folder>
+    <WRF_Domain_to_export>1</WRF_Domain_to_export>
+    <namelist_xml>namelist.wfs</namelist_xml>
+    <meteo_station_xml></meteo_station_xml>
+</Root>

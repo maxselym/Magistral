@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <server>localhost</server>
+    <dbname>magistral</dbname>
+    <user>test</user>
+    <pass>test</pass>
+    <port>5432</port>
+</Root>

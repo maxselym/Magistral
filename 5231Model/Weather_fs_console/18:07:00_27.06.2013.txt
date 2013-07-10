@@ -1,0 +1,8 @@
+Debug: Start time:  "18:07:00_27.06.2013" 
+Debug: Preferences loaded! 
+Debug: WFS loaded! 
+Debug: Date and time to calc: 
+Debug: "2013-06-27_18:00:00
+2013-06-28_18:00:00" 
+Debug: File linked! 
+Debug: Core num is:  4 

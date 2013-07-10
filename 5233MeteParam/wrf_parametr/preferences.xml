@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <netcdf1>/home/maxim/QtProject/Magistral/5233MeteParam/WorkFolder/met_em1.nc</netcdf1>
+    <netcdf2>/home/maxim/QtProject/Magistral/5233MeteParam/WorkFolder/met_em2.nc</netcdf2>
+    <output>/home/maxim/QtProject/Magistral/5233MeteParam/WorkFolder/</output>
+</Root>

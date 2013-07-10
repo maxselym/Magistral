@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <host>localhost</host>
+    <databasename>My_db</databasename>
+    <username>Maxim</username>
+    <password>nggmo-13</password>
+    <port>5432</port>
+</database>

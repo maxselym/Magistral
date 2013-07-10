@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE xbel>
+<xbel version="1.0">
+    <folder folded="no" title="WPS">
+        <folder folded="no" title="&amp;share">
+            <Key title="wrf_core" description="Ядро" value="'ARW'"/>
+            <Key title="max_dom" description="1 Количество доменов/сеток включая основной" value="1"/>
+            <Key title="start_date" description="Начальная дата" value="2012-03-15_00:00:00"/>
+            <Key title="end_date" description="Конечная дата" value="2012-03-17_00:00:00"/>
+            <Key title="interval_seconds" description="Интервал между данными GRIB в секундах" value="21600"/>
+            <Key title="io_form_geogrid" description="2 - NetCDF. Вид IO geogrid" value="2"/>
+            <Key title="debug_level" description="0 Отладка" value="0"/>
+        </folder>
+        <folder folded="no" title="&amp;geogrid">
+            <Key title="parent_id" description="1" value="1"/>
+            <Key title="parent_grid_ratio" value="1"/>
+            <Key title="i_parent_start" description="" value="1"/>
+            <Key title="j_parent_start" description="" value="1"/>
+            <Key title="s_we" description="1" value="1"/>
+            <Key title="e_we" description="Длина west-east dimension" value="100"/>
+            <Key title="s_sn" description="1" value="1"/>
+            <Key title="e_sn" description="Длина south-north dimension" value="100"/>
+            <Key title="geog_data_res" description="Разрешение" value="'2m'"/>
+            <Key title="dx" description="Расстояние в метрах по Х" value="5000"/>
+            <Key title="dy" description="Расстояние в метрах по Y" value="5000"/>
+            <Key title="map_proj" description="lambert, polar, mercator" value="lambert"/>
+            <Key title="ref_lat" description="Центр квадрата широта" value="70"/>
+            <Key title="ref_lon" description="Центр квадрата долгота" value="33"/>
+            <Key title="truelat1" description="" value="70"/>
+            <Key title="truelat2" description="" value="70"/>
+            <Key title="stand_lon" description="" value="33"/>
+            <Key title="geog_data_path" description="" value="'/nfs/WPS_GEOG/'"/>
+            <Key title="ref_x" description="= e_we/2" value="50"/>
+            <Key title="ref_y" description="= e_sn/2" value="50"/>
+            <Key title="opt_geogrid_tbl_path" description="Путь к рабочей папке" value="'/nfs/Orudzev/WorkFolder/'"/>
+        </folder>
+        <folder folded="no" title="&amp;ungrib">
+            <Key title="out_format" description="" value="'WPS'"/>
+            <Key title="prefix" description="" value="'FILE'"/>
+        </folder>
+        <folder folded="no" title="&amp;metgrid">
+            <Key title="fg_name" description="" value="'FILE'"/>
+            <Key title="io_form_metgrid" description="2 - NetCDF. Вид IO metgird" value="2"/>
+            <Key title="opt_metgrid_tbl_path" description="Путь к рабочей папке" value="'/nfs/Orudzev/WorkFolder/'"/>
+        </folder>
+    </folder>
+    <folder folded="no" title="WRF">
+        <folder folded="no" title="&amp;time_control">
+            <Key title="run_days" description="Количество дней для счета" value="2"/>
+            <Key title="run_hours" description="Количество часов для счета" value="0"/>
+            <Key title="run_minutes" description="Количество минут для счета" value="0"/>
+            <Key title="run_seconds" description="Количество секунд для счета" value="0"/>
+            <Key title="start_year" description="Интервал между данными GRIB в секундах" value="2012"/>
+            <Key title="start_month" value="03"/>
+            <Key title="start_day" description="" value="15"/>
+            <Key title="start_hour" description="" value="00"/>
+            <Key title="start_minute" description="" value="00"/>
+            <Key title="start_second" description="" value="00"/>
+            <Key title="end_year" description="" value="2012"/>
+            <Key title="end_month" description="" value="03"/>
+            <Key title="end_day" value="17"/>
+            <Key title="end_hour" description="" value="00"/>
+            <Key title="end_minute" description="" value="00"/>
+            <Key title="end_second" description="" value="00"/>
+            <Key title="interval_seconds" description="Интервал между данными GRIB в секундах" value="21600"/>
+            <Key title="input_from_file" description="" value=".true."/>
+            <Key title="history_interval" description="" value="60"/>
+            <Key title="frames_per_outfile" value="1000"/>
+            <Key title="restart" description="" value=".false."/>
+            <Key title="restart_interval" description="" value="5000"/>
+            <Key title="io_form_history" description="" value="2"/>
+            <Key title="io_form_restart" description="" value="2"/>
+            <Key title="io_form_input" description="" value="2"/>
+            <Key title="io_form_boundary" value="2"/>
+            <Key title="debug_level" description="Отладка" value="0"/>
+        </folder>
+        <folder folded="no" title="&amp;domains">
+            <Key title="time_step" description="=6*dx/1000" value="30"/>
+            <Key title="time_step_fract_num" description="" value="0"/>
+            <Key title="time_step_fract_den" description="" value="1"/>
+            <Key title="max_dom" description="" value="1"/>
+            <Key title="s_we" description="1" value="1"/>
+            <Key title="e_we" description="Длина west-east dimension" value="100"/>
+            <Key title="s_sn" description="1" value="1"/>
+            <Key title="e_sn" description="Длина south-north dimension" value="100"/>
+            <Key title="s_vert" description="1" value="1"/>
+            <Key title="e_vert" description="" value="28"/>
+            <Key title="num_metgrid_soil_levels" description="" value="4"/>
+            <Key title="num_metgrid_levels" description="" value="27"/>
+            <Key title="dx" description="Шаг по оси X в метрах" value="5000"/>
+            <Key title="dy" description="Шаг по оси Y в метрах" value="5000"/>
+            <Key title="grid_id" description="" value="1"/>
+            <Key title="parent_id" description="" value="1"/>
+            <Key title="i_parent_start" description="" value="1"/>
+            <Key title="j_parent_start" description="" value="1"/>
+            <Key title="parent_grid_ratio" description="" value="1"/>
+            <Key title="parent_time_step_ratio" value="1"/>
+            <Key title="feedback" description="" value="1"/>
+            <Key title="smooth_option" description="" value="0"/>
+        </folder>
+        <folder folded="no" title="&amp;physics">
+            <Key title="mp_physics" description="" value="6"/>
+            <Key title="ra_lw_physics" description="" value="1"/>
+            <Key title="ra_sw_physics" description="" value="1"/>
+            <Key title="radt" description="" value="10"/>
+            <Key title="sf_sfclay_physics" description="" value="1"/>
+            <Key title="sf_surface_physics" value="1"/>
+            <Key title="bl_pbl_physics" description="" value="1"/>
+            <Key title="bldt" description="" value="0"/>
+            <Key title="cu_physics" description="" value="0"/>
+            <Key title="cudt" description="" value="5"/>
+            <Key title="isfflx" description="" value="1"/>
+            <Key title="ifsnow" description="" value="0"/>
+            <Key title="icloud" description="" value="1"/>
+            <Key title="surface_input_source" description="" value="1"/>
+            <Key title="num_soil_layers" description="" value="4"/>
+            <Key title="mp_zero_out" description="" value="0"/>
+            <Key title="maxiens" description="" value="1"/>
+            <Key title="maxens" description="" value="3"/>
+            <Key title="maxens2" description="" value="3"/>
+            <Key title="maxens3" value="16"/>
+            <Key title="ensdim" value="144"/>
+            <Key title="slope_rad" description="" value="0"/>
+            <Key title="topo_shading" description="" value="0"/>
+        </folder>
+        <folder folded="yes" title="&amp;fdda"/>
+        <folder folded="yes" title="&amp;dynamics">
+            <Key title="w_damping" description="" value="0"/>
+            <Key title="diff_opt" description="" value="1"/>
+            <Key title="km_opt" description="" value="4"/>
+            <Key title="diff_6th_opt" description="" value="0"/>
+            <Key title="diff_6th_factor" description="" value="0.12"/>
+            <Key title="base_temp" value="290."/>
+            <Key title="damp_opt" description="" value="0"/>
+            <Key title="zdamp" description="" value="5000."/>
+            <Key title="dampcoef" description="" value="0.01"/>
+            <Key title="khdif" description="" value="0"/>
+            <Key title="kvdif" description="" value="0"/>
+            <Key title="non_hydrostatic" description="" value=".true."/>
+        </folder>
+        <folder folded="yes" title="&amp;bdy_control">
+            <Key title="spec_bdy_width" description="" value="5"/>
+            <Key title="spec_zone" description="" value="1"/>
+            <Key title="relax_zone" description="" value="4"/>
+            <Key title="specified" description="" value=".true."/>
+            <Key title="nested" description="" value=".false."/>
+        </folder>
+        <folder folded="yes" title="&amp;grib2"/>
+        <folder folded="yes" title="&amp;namelist_quilt">
+            <Key title="nio_tasks_per_group" description="" value="0"/>
+            <Key title="nio_groups" description="" value="1"/>
+        </folder>
+    </folder>
+    <folder folded="yes" title="WRFDA"/>
+</xbel>

@@ -1,0 +1,45 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 1,
+ start_date = 2012-03-15_00:00:00,
+ end_date = 2012-03-17_00:00:00,
+ interval_seconds = 21600,
+ io_form_geogrid = 2,
+ debug_level = 0,
+/
+
+&geogrid
+ parent_id = 1,
+ parent_grid_ratio = 1,
+ i_parent_start = 1,
+ j_parent_start = 1,
+ s_we = 1,
+ e_we = 100,
+ s_sn = 1,
+ e_sn = 100,
+ geog_data_res = '2m',
+ dx = 5000,
+ dy = 5000,
+ map_proj = lambert,
+ ref_lat = 70,
+ ref_lon = 33,
+ truelat1 = 70,
+ truelat2 = 70,
+ stand_lon = 33,
+ geog_data_path = '/nfs/WPS_GEOG/',
+ ref_x = 50,
+ ref_y = 50,
+ opt_geogrid_tbl_path = '/nfs/Orudzev/WorkFolder/',
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = 'FILE',
+/
+
+&metgrid
+ fg_name = 'FILE',
+ io_form_metgrid = 2,
+ opt_metgrid_tbl_path = '/nfs/Orudzev/WorkFolder/',
+/
+

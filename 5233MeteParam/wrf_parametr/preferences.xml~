@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <netcdf1>/nfs/meteoParam/met_em1.nc</netcdf1>
+    <netcdf2>/nfs/meteoParam/met_em2.nc</netcdf2>
+    <output>/nfs/meteoParam/</output>
+</Root>

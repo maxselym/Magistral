@@ -1,0 +1,16 @@
+prefix=/nfs/Magistral/NetCDF
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include
+ccompiler=icc
+cppcompiler=icpc
+fcompiler=ifort
+fflags=-g -I${includedir}
+flibs=-lnetcdff -lnetcdf
+
+Name: netcdf
+Description: NetCDF Client Library
+Version: 4.1.3
+Libs: -L${libdir} -lnetcdf
+Cflags: -I${includedir}
+

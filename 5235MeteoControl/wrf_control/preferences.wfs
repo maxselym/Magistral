@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE xbel>
+<stations version="1.0">
+  <station stnum="1" title="31009" x="50" y="20" z="2"/>
+  <station stnum="2" title="31032" x="30" y="40" z="2"/>
+  <station stnum="3" title="31008" x="15" y="69" z="2"/>
+  <station stnum="4" title="Station 4" x="99" y="83" z="2"/>
+  <station stnum="5" title="31033" x="78" y="10" z="2"/>
+</stations>
